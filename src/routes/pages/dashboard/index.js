@@ -13,20 +13,19 @@ import { AreaChart } from "../../../components/charts/areachart";
 import { BarChart } from "../../../components/charts/barchart";
 import { CustomTable } from "../../../components/table";
 
-
 import { cardData } from "./data";
 import { CardWrapper } from "../../../components/wrapper";
-import { TableSvg } from './icon/table';
+import { TableSvg } from "./icon/table";
 import "./style.scss";
 
-const barChartIcon = (<FontAwesomeIcon icon={faChartBar} />);
-const areaChartIcon = (<FontAwesomeIcon icon={faChartArea} />);
-const pieChartIcon = (<FontAwesomeIcon icon={faChartPie} />);
+const barChartIcon = <FontAwesomeIcon icon={faChartBar} />;
+const areaChartIcon = <FontAwesomeIcon icon={faChartArea} />;
+const pieChartIcon = <FontAwesomeIcon icon={faChartPie} />;
 
 export const Dashboard = () => {
   return (
     <div className="container">
-      <Container>
+      <Container fluid>
         <h1>Dashboard</h1>
         <CustomBreadCrum />
         <Row>
@@ -54,10 +53,10 @@ export const Dashboard = () => {
             </CardWrapper>
           </Col>
         </Row>
-				<Row>
-					<CardWrapper content="DataTable Example" icon={TableSvg}>
-					<CustomTable />
-					</CardWrapper>
+        <Row>
+          <CardWrapper content="DataTable Example" icon={TableSvg}>
+            <CustomTable />
+          </CardWrapper>
         </Row>
       </Container>
     </div>
