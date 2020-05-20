@@ -1,46 +1,51 @@
-import React from 'react';
-import BootstrapTable from 'react-bootstrap-table-next';
+import React from "react";
+import BootstrapTable from "react-bootstrap-table-next";
+import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
+import paginationFactory, {
+  PaginationProvider,
+  SizePerPageDropdownStandalone,
+} from "react-bootstrap-table2-paginator";
 
-const columns = [{
-  dataField: 'name',
-  text: 'Name',
-  sort: true
-}, {
-  dataField: 'position',
-  text: 'Position',
-  sort: true,
-}, {
-  dataField: 'office',
-  text: 'Office',
-  sort:true
-  },
-  {
-    dataField: 'age',
-    text: 'Age',
-    sort:true
-  },
-  {
-    dataField: 'startdate',
-    text: 'Start date',
-    sort:true
-  },
-  {
-    dataField: 'salary',
-    text: 'Salary',
-    sort:true
-  }];
+import { columns, tableData } from './constants'
 
-const tableData = [{
-  name: 'Airi Satou',
-  position: 'Accountant',
-  office: 'Tokyo',
-  age: '33',
-  startdate: '2008/11/28',
-  salary:'$162,700'
-}]
+const { SearchBar } = Search;
+
+const options = {
+  custom: true,
+  totalSize: tableData.length,
+};
+
+const pageOptions = {
+  hideSizePerPage: true,
+  prePage: "Prev",
+  nextPage: "Next",
+};
 
 export const CustomTable = () => {
-	return (
-    <BootstrapTable keyField='name' data={tableData } columns={ columns } />
-	)
-}
+  return (
+    <PaginationProvider pagination={paginationFactory(options)}>
+      {({ paginationProps, paginationTableProps }) => (
+        <div>
+          <SizePerPageDropdownStandalone {...paginationProps} />
+          <ToolkitProvider
+            keyField="id"
+            data={tableData}
+            columns={columns}
+            search
+          >
+            {(props) => (
+              <div>
+                <SearchBar {...props.searchProps} />
+                <hr />
+                <BootstrapTable
+                  {...props.baseProps}
+                  pagination={paginationFactory(pageOptions)}
+                />
+              </div>
+            )}
+          </ToolkitProvider>
+        </div>
+      )}
+    </PaginationProvider>
+  );
+};

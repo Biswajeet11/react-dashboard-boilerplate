@@ -7,7 +7,6 @@ const data = {
   datasets: [
     {
 			data: [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
-			label: "My First dataset",
       fill: true,
       backgroundColor: 'rgb(126,172,223)',
       borderColor: 'rgb(19,70,195',
