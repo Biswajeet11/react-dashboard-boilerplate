@@ -35,6 +35,7 @@ export const CustomTable = () => {
           >
             {(props) => (
               <div>
+                Search:
                 <SearchBar {...props.searchProps} />
                 <hr />
                 <BootstrapTable

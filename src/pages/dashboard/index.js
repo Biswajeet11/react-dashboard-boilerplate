@@ -9,8 +9,8 @@ import {
 import { CustomBreadCrum } from "../../components/breadcrum";
 import { Container, Row, Col } from "react-bootstrap";
 import { CustomCard } from "../../components/card";
-import { AreaChart } from "../../components/areachart";
-import { BarChart } from "../../components/barchart";
+import { AreaChart } from "../../components/charts/areachart";
+import { BarChart } from "../../components/charts/barchart";
 import { CustomTable } from "../../components/table";
 
 
