@@ -6,6 +6,7 @@ const data = {
            'April', 'May','June'],
   datasets: [
     {
+      label:'Revenue',
       backgroundColor: 'rgb(24,94,206)',
       data: [4215, 5312, 6251, 7841, 9821, 14984]
     }

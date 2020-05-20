@@ -7,6 +7,7 @@ export const CardWrapper = (props) => {
     <Card className="mb-4">
       <Card.Header className={props.footerContent ? "header" : ""}>
         {props.icon}
+        {" "}
         {props.content}
       </Card.Header>
       <Card.Body>{props.children}</Card.Body>

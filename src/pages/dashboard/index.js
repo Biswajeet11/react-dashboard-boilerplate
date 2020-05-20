@@ -2,7 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartBar,
-  faChartArea
+  faChartArea,
+  faChartPie,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { CustomBreadCrum } from "../../components/breadcrum";
@@ -19,7 +20,8 @@ import { TableSvg } from '../dashboard/icon/table';
 import "./style.scss";
 
 const barChartIcon = (<FontAwesomeIcon icon={faChartBar} />);
-const areaChartIcon =(<FontAwesomeIcon icon={faChartArea} />)
+const areaChartIcon = (<FontAwesomeIcon icon={faChartArea} />);
+const pieChartIcon = (<FontAwesomeIcon icon={faChartPie} />);
 
 export const Dashboard = () => {
   return (
