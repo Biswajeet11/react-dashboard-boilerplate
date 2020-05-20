@@ -52,11 +52,9 @@ export const Dashboard = () => {
           </CardWrapper>
         </Col>
       </Row>
-      <Row>
         <CardWrapper content="DataTable Example" icon={TableSvg}>
           <CustomTable />
         </CardWrapper>
-      </Row>
     </Container>
   );
 };
