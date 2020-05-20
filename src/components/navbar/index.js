@@ -31,12 +31,12 @@ export const CustomNavBar = ({ children }) => {
             </InputGroup.Append>
           </InputGroup>
         </Form>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#">Settings</NavDropdown.Item>
         <NavDropdown.Item href="#">Activity Log</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#">Logout</NavDropdown.Item>
-      </NavDropdown>
+      </NavDropdown> */}
         <SideBar />
       </Navbar>
       {children}
