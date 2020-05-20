@@ -1,6 +1,7 @@
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
 import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
+import cellEditFactory from "react-bootstrap-table2-editor";
 import paginationFactory, {
   PaginationProvider,
   SizePerPageDropdownStandalone,
@@ -41,6 +42,7 @@ export const CustomTable = () => {
                 <BootstrapTable
                   {...props.baseProps}
                   pagination={paginationFactory(pageOptions)}
+                  cellEdit={cellEditFactory({mode:'click'})}
                 />
               </div>
             )}
