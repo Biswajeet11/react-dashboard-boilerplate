@@ -12,7 +12,7 @@ export const RegisterForm = () => (
         <Col lg="8">
           <CardWrapper
             content="Create Account"
-            footerContent="Have an account?Go to login"
+            footerContent="Have an account? Go to login"
           >
             <Formik
               initialValues={{

@@ -1,3 +1,10 @@
 @import '../../base.scss';
 
-
+.details-link-wrapper{
+	display: flex;
+	justify-content: space-between;
+	a{
+		font-size: 80%;
+    font-weight: 400;
+	}
+}
