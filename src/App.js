@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import { CustomNavBar } from './components/navbar';
-import { Dashboard } from './pages/dashboard/index';
+import { Dashboard } from './routes/pages/dashboard/index';
 import { LoginForm } from './components/login';
 import { RegisterForm } from './components/register';
 

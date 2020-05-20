@@ -6,17 +6,17 @@ import {
   faChartPie,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { CustomBreadCrum } from "../../components/breadcrum";
+import { CustomBreadCrum } from "../../../components/breadcrum";
 import { Container, Row, Col } from "react-bootstrap";
-import { CustomCard } from "../../components/card";
-import { AreaChart } from "../../components/charts/areachart";
-import { BarChart } from "../../components/charts/barchart";
-import { CustomTable } from "../../components/table";
+import { CustomCard } from "../../../components/card";
+import { AreaChart } from "../../../components/charts/areachart";
+import { BarChart } from "../../../components/charts/barchart";
+import { CustomTable } from "../../../components/table";
 
 
 import { cardData } from "./data";
-import { CardWrapper } from "../../components/wrapper";
-import { TableSvg } from '../dashboard/icon/table';
+import { CardWrapper } from "../../../components/wrapper";
+import { TableSvg } from './icon/table';
 import "./style.scss";
 
 const barChartIcon = (<FontAwesomeIcon icon={faChartBar} />);
