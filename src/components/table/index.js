@@ -2,7 +2,6 @@ import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
-import cellEditFactory from "react-bootstrap-table2-editor";
 import paginationFactory, {
   PaginationProvider,
   SizePerPageDropdownStandalone,
@@ -28,10 +27,6 @@ const pageOptions = {
   hideSizePerPage: true,
   paginationSize: 4,
   pageStartIndex: 0,
-  // alwaysShowAllBtns: true, // Always show next and previous button
-  // withFirstAndLast: false, // Hide the going to First and Last page button
-  // hideSizePerPage: true, // Hide the sizePerPage dropdown always
-  // hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
   firstPageText: 'First',
   prePageText: 'Previous',
   nextPageText: 'Next',
