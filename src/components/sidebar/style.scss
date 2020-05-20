@@ -2,7 +2,7 @@
   height: 100%; 
   width: 225px; 
   position: fixed; 
-  z-index: 0; 
+  z-index: 100; 
   top: 0; 
   left: 0;
   background-color:rgb(25, 28, 21);
@@ -10,25 +10,24 @@
   margin-top: 60px;
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-}
+// /* The navigation menu links */
+// .sidenav a {
+//   padding: 6px 8px 6px 16px;
+//   text-decoration: none;
+//   font-size: 25px;
+//   color: #ffffff;
+//   display: block;
+// }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+// /* When you mouse over the navigation links, change their color */
+// .sidenav a:hover {
+//   color: #f1f1f1;
+// }
 
 /* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
+// .main {
+//   padding: 0px 10px;
+// }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

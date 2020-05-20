@@ -24,41 +24,39 @@ const pieChartIcon = <FontAwesomeIcon icon={faChartPie} />;
 
 export const Dashboard = () => {
   return (
-    <div className="container">
-      <Container fluid>
-        <h1>Dashboard</h1>
-        <CustomBreadCrum />
-        <Row>
-          {cardData.map((data) => {
-            return (
-              <Col>
-                <CustomCard
-                  variant={data.type}
-                  id={data.id}
-                  content={data.text}
-                />
-              </Col>
-            );
-          })}
-        </Row>
-        <Row>
-          <Col>
-            <CardWrapper content="Area Chart Example" icon={areaChartIcon}>
-              <AreaChart />
-            </CardWrapper>
-          </Col>
-          <Col>
-            <CardWrapper content="Bar Chart Example" icon={barChartIcon}>
-              <BarChart />
-            </CardWrapper>
-          </Col>
-        </Row>
-        <Row>
-          <CardWrapper content="DataTable Example" icon={TableSvg}>
-            <CustomTable />
+    <Container fluid className="container-wrapper">
+      <h1>Dashboard</h1>
+      <CustomBreadCrum />
+      <Row>
+        {cardData.map((data) => {
+          return (
+            <Col>
+              <CustomCard
+                variant={data.type}
+                id={data.id}
+                content={data.text}
+              />
+            </Col>
+          );
+        })}
+      </Row>
+      <Row>
+        <Col>
+          <CardWrapper content="Area Chart Example" icon={areaChartIcon}>
+            <AreaChart />
           </CardWrapper>
-        </Row>
-      </Container>
-    </div>
+        </Col>
+        <Col>
+          <CardWrapper content="Bar Chart Example" icon={barChartIcon}>
+            <BarChart />
+          </CardWrapper>
+        </Col>
+      </Row>
+      <Row>
+        <CardWrapper content="DataTable Example" icon={TableSvg}>
+          <CustomTable />
+        </CardWrapper>
+      </Row>
+    </Container>
   );
 };
