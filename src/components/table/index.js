@@ -18,10 +18,31 @@ const options = {
   totalSize: tableData.length,
 };
 
+const customTotal = (from, to, size) => (
+  <span className="react-bootstrap-table-pagination-total">
+    Showing { from } of { size } Results
+  </span>
+);
+
 const pageOptions = {
   hideSizePerPage: true,
-  prePage: "Prev",
-  nextPage: "Next",
+  paginationSize: 4,
+  pageStartIndex: 0,
+  // alwaysShowAllBtns: true, // Always show next and previous button
+  // withFirstAndLast: false, // Hide the going to First and Last page button
+  // hideSizePerPage: true, // Hide the sizePerPage dropdown always
+  // hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
+  firstPageText: 'First',
+  prePageText: 'Previous',
+  nextPageText: 'Next',
+  lastPageText: 'Last',
+  nextPageTitle: 'First page',
+  prePageTitle: 'Pre page',
+  firstPageTitle: 'Next page',
+  lastPageTitle: 'Last page',
+  showTotal: true,
+  paginationTotalRenderer: customTotal,
+  disablePageTitle: true,
 };
 
 export const CustomTable = () => {
@@ -53,7 +74,6 @@ export const CustomTable = () => {
                 <BootstrapTable
                   {...props.baseProps}
                   pagination={paginationFactory(pageOptions)}
-                  cellEdit={cellEditFactory({ mode: "click" })}
                 />
               </div>
             )}
