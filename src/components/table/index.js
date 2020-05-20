@@ -1,6 +1,6 @@
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
-import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
 import cellEditFactory from "react-bootstrap-table2-editor";
 import paginationFactory, {
@@ -8,7 +8,8 @@ import paginationFactory, {
   SizePerPageDropdownStandalone,
 } from "react-bootstrap-table2-paginator";
 
-import { columns, tableData } from './constants'
+import { columns, tableData } from "./constants";
+import './style.scss'
 
 const { SearchBar } = Search;
 
@@ -28,7 +29,6 @@ export const CustomTable = () => {
     <PaginationProvider pagination={paginationFactory(options)}>
       {({ paginationProps, paginationTableProps }) => (
         <div>
-          <SizePerPageDropdownStandalone {...paginationProps} />
           <ToolkitProvider
             bootstrap4
             keyField="id"
@@ -38,13 +38,22 @@ export const CustomTable = () => {
           >
             {(props) => (
               <div>
-                Search:
-                <SearchBar {...props.searchProps} />
+                <div className="table-header-container">
+                  <div>
+                    Show
+                    <SizePerPageDropdownStandalone {...paginationProps} />
+                    entries
+                  </div>
+                  <div>
+                    Search:
+                    <SearchBar {...props.searchProps} />
+                  </div>
+                </div>
                 <hr />
                 <BootstrapTable
                   {...props.baseProps}
                   pagination={paginationFactory(pageOptions)}
-                  cellEdit={cellEditFactory({mode:'click'})}
+                  cellEdit={cellEditFactory({ mode: "click" })}
                 />
               </div>
             )}
