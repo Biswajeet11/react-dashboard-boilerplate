@@ -1,5 +1,6 @@
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
 import cellEditFactory from "react-bootstrap-table2-editor";
 import paginationFactory, {
@@ -29,6 +30,7 @@ export const CustomTable = () => {
         <div>
           <SizePerPageDropdownStandalone {...paginationProps} />
           <ToolkitProvider
+            bootstrap4
             keyField="id"
             data={tableData}
             columns={columns}
