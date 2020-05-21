@@ -1,9 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChartBar,
-  faChartArea,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChartBar, faChartArea } from "@fortawesome/free-solid-svg-icons";
 
 import { CustomBreadCrum } from "../../../components/breadcrum";
 import { Row, Col } from "react-bootstrap";
@@ -49,9 +46,14 @@ export const Dashboard = () => {
           </CardWrapper>
         </Col>
       </Row>
-      <CardWrapper content="DataTable Example" icon={TableSvg}>
-        <CustomTable />
-      </CardWrapper>
+      <Col
+        sm="12"
+       className="custom-table"
+      >
+        <CardWrapper content="DataTable Example" icon={TableSvg}>
+          <CustomTable />
+        </CardWrapper>
+      </Col>
     </div>
   );
 };

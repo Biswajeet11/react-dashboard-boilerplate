@@ -10,9 +10,9 @@ export const CustomCard = ({ variant, id, content }) => {
     <Card bg={variant.toLowerCase()} key={id} text="white" className="details-link mb-4">
       <Card.Body>{content}</Card.Body>
       <Card.Footer className="details-link-wrapper">
-        <a href="#" style={{color:"white"}}  >View Details</a>
+        <a href="#"  className="stretched-link" style={{color:"white"}}  >View Details</a>
 				<FontAwesomeIcon icon={faAngleRight} size="1x"/>
-      </Card.Footer>
+        </Card.Footer>
     </Card>
   );
 };
