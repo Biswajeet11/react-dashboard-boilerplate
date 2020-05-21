@@ -16,7 +16,7 @@ const data = {
 export const PieChart = () => {
   return (
     <div>
-      <Pie data={data} />
+      <Pie data={data}/>
     </div>
   );
 };

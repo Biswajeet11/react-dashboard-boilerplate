@@ -24,7 +24,7 @@ const data = {
 export const AreaChart = () => {
 	return (
 		<Line
-			data={data}
+      data={data}
 		/>
 	)
 }

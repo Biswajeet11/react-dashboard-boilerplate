@@ -1,5 +1,5 @@
-import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Navbar, Nav, Row, Col, Collapse, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMeteor,
@@ -7,44 +7,39 @@ import {
   faBookOpen,
   faTachometerAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import "./style.scss";
+// import "./style.scss";
+import "./sidebar.css";
 
-export const SideBar = () => {
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+// Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+   document.getElementById("mySidebar").style.width = "0";
+   document.getElementById("main").style.marginLeft = "0";
+ }
+export const SideBar=()=> {
   return (
-    <div className="sidenav">
-      <h5 style={{ color: "rgb(70,71,72)" }}>CORE</h5>
-      <a>
-        <div>
-          <FontAwesomeIcon icon={faTachometerAlt} size="xs" />
-          Dashboard
-        </div>
-      </a>
-      <h5 style={{ color: "rgb(70,71,72)" }}>INTERFACE</h5>
-      <a>
-        <div>
-          <FontAwesomeIcon icon={faColumns} size="xs" />
-          Layouts
-        </div>
-      </a>
-      <a>
-        <div>
-          <FontAwesomeIcon icon={faBookOpen} size="xs"  />
-          Pages
-        </div>
-      </a>
-      <h5 style={{ color: "rgb(70,71,72)" }}>Addons</h5>
-      <a>
-        <div>
-          <FontAwesomeIcon icon={faMeteor} size="xs" />
-          Charts
-        </div>
-      </a>
-      <a>
-        <div>
-          {/* <FontAwesomeIcon icon={faDatabase} size="sm" /> */}
-          Tables
-        </div>
-      </a>
+    
+    <div>
+      <div id="mySidebar" className="sidebar">
+        <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+          &times;
+        </a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div id="main">
+        <span className="openbtn" onClick={openNav}>
+          &#9776;
+        </span>
+      </div>
     </div>
   );
-};
+}

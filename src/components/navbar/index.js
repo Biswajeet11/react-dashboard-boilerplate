@@ -11,15 +11,15 @@ import {
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SideBar } from "../sidebar";
-import { faSearch, faBars ,faUser} from "@fortawesome/free-solid-svg-icons";
+import { faSearch ,faUser} from "@fortawesome/free-solid-svg-icons";
 import "./style.scss";
 
 export const CustomNavBar = () => {
   return (
     <div className="nav-bar">
-      <Navbar bg="dark" variant="dark" fixed="top">
+      <Navbar bg="dark" variant="dark" fixed="top" expand="md">
         <Navbar.Brand>Start Bootstrap</Navbar.Brand>
-        <FontAwesomeIcon icon={faBars} />
+        <SideBar/>
         <Nav className="mr-auto" />
         <Navbar.Collapse className="justify-content-end">
           <Form>
@@ -47,7 +47,6 @@ export const CustomNavBar = () => {
             <NavDropdown.Item href="#">Logout</NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
-        <SideBar />
       </Navbar>
     </div>
   );
