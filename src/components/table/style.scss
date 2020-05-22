@@ -2,11 +2,14 @@
 	display:flex;
 	justify-content: space-between;
 }
-.table{
-width: 100%;
-}
+// .react-bootstrap-table table{
+// width: 100%;
+// // overflow: auto;
+// // display: block;
+// // table-layout: auto;
+// }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
 	.react-bootstrap-table table {
     table-layout: fixed;
     width: auto;
