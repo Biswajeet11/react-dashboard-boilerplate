@@ -11,7 +11,7 @@ import { CustomTable } from "../../../components/table";
 
 import { cardData } from "./data";
 import { CardWrapper } from "../../../components/wrapper";
-import { TableSvg } from "./icon/table";
+import { TableSvg } from "../../../assets/icon/table";
 
 const barChartIcon = <FontAwesomeIcon icon={faChartBar} />;
 const areaChartIcon = <FontAwesomeIcon icon={faChartArea} />;

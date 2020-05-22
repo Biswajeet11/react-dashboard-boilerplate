@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Navbar,
   Nav,
@@ -7,18 +7,15 @@ import {
   Button,
   InputGroup,
   NavDropdown,
-  Image,
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SideBar } from "../sidebar";
 import { faSearch, faUser,faBars } from "@fortawesome/free-solid-svg-icons";
+import { SideBar } from "../sidebar";
 import "./style.scss";
 
-export const CustomNavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  
+export const CustomNavBar = ({setIsOpen, isOpen}) => {
   return (
-    <div className="nav-bar">
+    <div className="nav-bar" >
       <Navbar bg="dark" variant="dark" fixed="top" expand="md">
         <Navbar.Brand>Start Bootstrap</Navbar.Brand>
         <Navbar.Collapse
@@ -26,9 +23,9 @@ export const CustomNavBar = () => {
             setIsOpen(!isOpen);
           }}
         >
-          <FontAwesomeIcon icon={faBars} color={"white"} />
+        <FontAwesomeIcon icon={faBars} color={"white"} style={{	cursor: "pointer"	}}/>
         </Navbar.Collapse>
-        <SideBar isOpen={isOpen} />
+        <SideBar isOpen={isOpen}  />
         <Nav className="mr-auto" />
         <Navbar.Collapse className="justify-content-end">
           <Form>

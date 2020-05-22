@@ -1,17 +1,26 @@
 
+#mySidenav.open {
+  width:250px;
+ } 
 .sidebar {
   height: 100%; 
   width: 220px; 
   position: fixed; 
-  z-index: 100; 
+  z-index: 1; 
   top: 0;
   left: 0;
   background-color:rgb(39, 44, 49); 
   overflow-x: hidden; 
-	transition: 0.5s; 
+  transition: 0.5s;
   margin-top: 60px;
 }
-
+.sidebar .sidebar-menu-heading{
+  padding: 1.75rem 1rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.25);
+}
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;

@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-// import "./App.scss";
 import { Dashboard } from "./routes/pages/dashboard/index";
 import Layout from "./components/layout";
 import { Charts } from "./routes/pages/charts";
@@ -12,16 +11,17 @@ import { Error500 } from "./routes/pages/error/500error";
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Layout>
-          <Route path="/" component={Dashboard} exact={true} />
-          <Route path="/charts" component={Charts} exact={true} />
-          <Route path="/tables" component={Table} exact={true} />
-          <Route path="/401" component={Error401} exact={true} />
-          <Route path="/404" component={Error404} exact={true} />
-          <Route path="/500" component={Error500} exact={true} />
-        </Layout>
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route path="/" exact={true} component={Dashboard} />
+          <Route path="/charts" exact={true} component={Charts} />
+          <Route path="/tables" exact={true} component={Table} />
+          <Route path="/401" exact={true} component={Error401} />
+          <Route path="/404" exact={true} component={Error404} />
+          <Route path="/500" exact={true} component={Error500} />
+          <Route component={Error404} />
+        </Switch>
+      </Layout>
     </BrowserRouter>
   );
 }
