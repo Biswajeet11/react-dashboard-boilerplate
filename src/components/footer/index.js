@@ -6,9 +6,9 @@ export const FooterWrapper = () => {
       <Container fluid={true}>
         <div className="d-flex align-items-center justify-content-between small">
           <div>
-            <a href="#">Privacy Policy</a>
+            <a href="/">Privacy Policy</a>
             &middot;
-            <a href="#">Terms &amp; Conditions</a>
+            <a href="/">Terms &amp; Conditions</a>
           </div>
         </div>
       </Container>

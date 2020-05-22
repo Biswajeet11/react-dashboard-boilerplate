@@ -45,10 +45,10 @@ export const CustomNavBar = ({setIsOpen, isOpen}) => {
             title={<FontAwesomeIcon icon={faUser} />}
             id="basic-nav-dropdown"
           >
-            <NavDropdown.Item href="#">Settings</NavDropdown.Item>
-            <NavDropdown.Item href="#">Activity Log</NavDropdown.Item>
+            <NavDropdown.Item href="/">Settings</NavDropdown.Item>
+            <NavDropdown.Item href="/">Activity Log</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#">Logout</NavDropdown.Item>
+            <NavDropdown.Item href="/">Logout</NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
       </Navbar>

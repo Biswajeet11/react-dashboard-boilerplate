@@ -73,7 +73,7 @@ export const LoginForm = () => (
                     <Form.Check type="checkbox" label="Remember password" />
                   </Form.Group>
                   <Form.Group className="button-group">
-                    <a href="#">Forgot Password?</a>
+                    <a href="/">Forgot Password?</a>
                     <Button variant="primary" type="submit">
                       Login
                     </Button>
