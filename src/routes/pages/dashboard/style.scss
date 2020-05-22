@@ -2,8 +2,16 @@
   padding-left: 230px;
   padding-top: 65px;
  }
- .custom-table{
-   flex: 1 1 auto;
-   min-height: 1px;
-   padding: 1.25rem ;
- }
+//  .custom-table{
+//   // display: block;
+//   //   width: 100%;
+//   //   overflow-x: auto;
+//   }
+
+ @media (max-width: 720px) {
+  .custom-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

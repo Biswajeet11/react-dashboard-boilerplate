@@ -7,7 +7,7 @@ import paginationFactory, {
   SizePerPageDropdownStandalone,
 } from "react-bootstrap-table2-paginator";
 
-import { Row,Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import { columns, tableData } from "./constants";
 import "./style.scss";
@@ -46,37 +46,39 @@ export const CustomTable = () => {
   return (
     <PaginationProvider pagination={paginationFactory(options)}>
       {({ paginationProps, paginationTableProps }) => (
-        <div>
-          <ToolkitProvider
-            bootstrap4
-            keyField="id"
-            data={tableData}
-            columns={columns}
-            search
-          >
-            {(props) => (
-              <div>
-                <Row className="table-header-container">
-                  <Col sm="12" md="6">
-                    Show
-                    <SizePerPageDropdownStandalone {...paginationProps} />
-                    entries
-                  </Col>
-                  <Col sm="12" md="6">
-                    Search:
-                    <SearchBar {...props.searchProps} />
-                  </Col>
-                </Row>
-                <hr />
+        <ToolkitProvider
+          bootstrap4
+          keyField="id"
+          data={tableData}
+          columns={columns}
+          search
+        >
+          {(props) => (
+            <div style={{ display: "block", overflowX: "auto", width: "100%" }}>
+              <Row className="table-header-container">
+                <Col sm="12" md="6">
+                  Show
+                  <SizePerPageDropdownStandalone {...paginationProps} />
+                  entries
+                </Col>
+                <Col sm="12" md="6">
+                  Search:
+                  <SearchBar {...props.searchProps} />
+                </Col>
+              </Row>
+              <hr />
+              <Col sm="12" style={{ tableLayout: "auto" }}>
                 <BootstrapTable
-                  wrapperClasses="table-responsive"
+                  // className="table"
+                  classes="table"
+                  // wrapperClasses="table"
                   {...props.baseProps}
                   pagination={paginationFactory(pageOptions)}
                 />
-              </div>
-            )}
-          </ToolkitProvider>
-        </div>
+              </Col>
+            </div>
+          )}
+        </ToolkitProvider>
       )}
     </PaginationProvider>
   );

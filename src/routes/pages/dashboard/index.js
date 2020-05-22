@@ -46,14 +46,11 @@ export const Dashboard = () => {
           </CardWrapper>
         </Col>
       </Row>
-      <Col
-        sm="12"
-       className="custom-table"
-      >
-        <CardWrapper content="DataTable Example" icon={TableSvg}>
-          <CustomTable />
+      <div className="custom-table">
+        <CardWrapper content="DataTable Example" icon={TableSvg} >
+            <CustomTable />
         </CardWrapper>
-      </Col>
+      </div>
     </div>
   );
 };
