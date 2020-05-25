@@ -10,14 +10,18 @@ import { Error404 } from "./routes/pages/error/404error";
 import { Error500 } from "./routes/pages/error/500error";
 import { AuthenticatedRoute } from "./routes/pages/auth/authenticated-route";
 import { UnAuthenticatedRoute } from "./routes/pages/auth/unauthenticated-route";
+import { LightSideNav } from "./routes/layouts/lightsidenav";
+import { StaticNavigation } from "./routes/layouts/staticnavigation";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <AuthenticatedRoute path="/" exact={true} component={Dashboard} />
-        <AuthenticatedRoute path="/charts" exact={true} component={Charts} />
-        <AuthenticatedRoute path="/tables" exact={true} component={Table} />
+        <AuthenticatedRoute path="/" exact={true} component={Dashboard} isLight={false}/>
+        <AuthenticatedRoute path="/charts" exact={true} component={Charts} isLight={false}/>
+        <AuthenticatedRoute path="/tables" exact={true} component={Table} isLight={false}/>
+        <AuthenticatedRoute path="/light" exact={true} component={LightSideNav} isLight={true}/>
+        <AuthenticatedRoute path="/static" exact={true} component={StaticNavigation} isLight={false}/>
         <UnAuthenticatedRoute
           path="/login"
           exact={true}

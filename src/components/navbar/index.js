@@ -9,35 +9,45 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faUser,faBars } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import { SideBar } from "../sidebar";
 import "./style.scss";
 
-export const CustomNavBar = ({setIsOpen, isOpen}) => {
+export const CustomNavBar = ({ setIsOpen, isOpen,isLight }) => {
   return (
-    <div className="nav-bar" >
+    <div className="nav-bar">
       <Navbar bg="dark" variant="dark" fixed="top" expand="md">
         <Navbar.Brand>Start Bootstrap</Navbar.Brand>
-        <Navbar.Collapse
-          onClick={() => {
-            setIsOpen(!isOpen);
+        {/* <div className="collapse"> */}
+          <Navbar.Collapse
+            onClick={() => {
+              setIsOpen(!isOpen);
           }}
-        >
-        <FontAwesomeIcon icon={faBars} color={"white"} style={{	cursor: "pointer"	}}/>
-        </Navbar.Collapse>
-        <SideBar isOpen={isOpen}  />
+          className="collapse"
+          >
+            <FontAwesomeIcon
+              icon={faBars}
+              // color={"white"}
+              style={{ cursor: "pointer" }}
+            />
+          </Navbar.Collapse>
+        {/* </div> */}
+        <SideBar isOpen={isOpen} isLight={isLight} />
         <Nav className="mr-auto" />
         <Navbar.Collapse className="justify-content-end">
+        <div className="search">
           <Form>
             <InputGroup className="mb-3">
               <FormControl placeholder="Search for..." />
               <InputGroup.Append>
+               
                 <Button variant="primary">
                   <FontAwesomeIcon icon={faSearch} />
-                </Button>
+                  </Button>
               </InputGroup.Append>
             </InputGroup>
-          </Form>
+            </Form>
+            </div>
           <NavDropdown
             className="dropdownMenu dropdown-menu-right"
             alignRight

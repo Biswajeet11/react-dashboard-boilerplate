@@ -9,3 +9,13 @@
 			padding-right: 20px;
 	}
 }
+
+@media (max-width: 768px) {
+  .collapse {
+    margin-left: 70% !important;
+    // padding-top: 65px !important;
+	}
+	// .search{
+	// 	display: none !important;
+	// }
+}

@@ -5,7 +5,7 @@ import { FooterWrapper } from "../footer";
 
 import "./style.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children,isLight}) => {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <Container
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       className={isOpen ? "container-wrapper" : "content-wrapper"}
     >
       {children}
-      <CustomNavBar setIsOpen={setIsOpen} isOpen={isOpen} />
+      <CustomNavBar setIsOpen={setIsOpen} isOpen={isOpen} isLight={isLight}/>
       <FooterWrapper />
     </Container>
   );
