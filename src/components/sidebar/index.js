@@ -103,13 +103,16 @@ export const SideBar = (props) => {
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="1">
                     <Card.Body color={!props.isLight ? "white" : "#adb5bd"}>
-                      <Accordion.Toggle as={Card.Body} eventKey="2">
-                        <Accordion.Toggle as={Card.Body} eventKey="4">
-                          Authentication
-                        </Accordion.Toggle>
+                      Authentication
+                      <Accordion.Toggle as={Card.Body} eventKey="1">
+                        <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav.Link href="/register">Register</Nav.Link>
                       </Accordion.Toggle>
-                      <Accordion.Toggle as={Card.Body} eventKey="3">
-                        Errors
+                      Error
+                      <Accordion.Toggle as={Card.Body} eventKey="1">
+                        <Nav.Link href="/401">401 Page</Nav.Link>
+                        <Nav.Link href="/404">404 Page</Nav.Link>
+                        <Nav.Link href="/500">500 Page</Nav.Link>
                       </Accordion.Toggle>
                     </Card.Body>
                   </Accordion.Collapse>
