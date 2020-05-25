@@ -1,5 +1,5 @@
 import React from "react";
-
+import './style.scss';
 export const Error500 = () => {
   return (
     <div>
@@ -16,6 +16,8 @@ export const Error500 = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
           data-fa-i2svg=""
+          style={{height: "12px",
+          width: "12px"}}
         >
           <path
             fill="currentColor"

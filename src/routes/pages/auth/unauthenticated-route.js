@@ -1,15 +1,15 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Layout from "../../../components/layout";
+import BlankLayout from "../../../components/blank-layout";
 
-export const AuthenticatedRoute = ({ component: Component, ...rest }) => (
+export const UnAuthenticatedRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
     render={(props) => {
       return (
-        <Layout>
+        <BlankLayout>
           <Component {...props} />
-        </Layout>
+        </BlankLayout>
       );
     }}
   />

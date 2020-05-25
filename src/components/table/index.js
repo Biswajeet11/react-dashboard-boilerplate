@@ -67,11 +67,9 @@ export const CustomTable = () => {
                 </Col>
               </Row>
               <hr />
-              <Col sm="12" style={{ tableLayout: "auto" }}>
+              <Col sm="12" >
                 <BootstrapTable
-                  // className="table"
-                  classes="table"
-                  // wrapperClasses="table"
+                  wrapperClasses="table-responsive"
                   {...props.baseProps}
                   pagination={paginationFactory(pageOptions)}
                 />

@@ -1,8 +1,11 @@
 import React from "react";
-
+import { Row, Container, Col } from "react-bootstrap";
+import './style.scss';
 export const Error401 = () => {
   return (
-    <div>
+    <Container >
+      <Row >
+        <Col >
       <h1 className="display-1">401</h1>
       <p className="lead">Unauthorized</p>
       <p>Access to this resource is denied.</p>
@@ -16,7 +19,9 @@ export const Error401 = () => {
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          data-fa-i2svg=""
+            data-fa-i2svg=""
+            style={{height: "12px",
+              width: "12px"}}
         >
           <path
             fill="currentColor"
@@ -28,6 +33,8 @@ export const Error401 = () => {
         </svg>
         Return to Dashboard
       </a>
-    </div>
+      </Col>
+      </Row>
+     </Container>
   );
 };

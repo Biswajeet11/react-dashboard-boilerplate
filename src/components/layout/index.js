@@ -1,19 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import { CustomNavBar } from '../navbar';
-import { FooterWrapper } from '../footer';
+import { CustomNavBar } from "../navbar";
+import { FooterWrapper } from "../footer";
 
-import './style.scss';
+import "./style.scss";
 
 const Layout = ({ children }) => {
-	const [isOpen, setIsOpen] = useState(true);
-	return (
-		<Container fluid className={isOpen ? "container-wrapper" : "content-wrapper"} >
-			<CustomNavBar setIsOpen={setIsOpen} isOpen={isOpen}/>
-				{children}
-			<FooterWrapper/>
-			</Container>
-	)
-}
+  const [isOpen, setIsOpen] = useState(true);
+  return (
+    <Container
+      fluid
+      className={isOpen ? "container-wrapper" : "content-wrapper"}
+    >
+      {children}
+      <CustomNavBar setIsOpen={setIsOpen} isOpen={isOpen} />
+      <FooterWrapper />
+    </Container>
+  );
+};
 
 export default Layout;

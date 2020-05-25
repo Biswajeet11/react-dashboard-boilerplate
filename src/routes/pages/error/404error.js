@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Image, Row, Col } from "react-bootstrap";
 import errorImage from "../../../assets/error-404-monochrome.svg";
-
+import './style.scss';
 export const Error404 = () => {
   return (
     <Container>

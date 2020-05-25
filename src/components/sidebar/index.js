@@ -56,7 +56,9 @@ export const SideBar = (props) => {
                   <Accordion.Collapse eventKey="1">
                     <Card.Body>
                       <Accordion.Toggle as={Card.Body} eventKey="2">
-                        Authentication
+                        <Accordion.Toggle as={Card.Body} eventKey="4">
+                          Authentication
+                          </Accordion.Toggle>
                       </Accordion.Toggle>
                       <Accordion.Toggle as={Card.Body} eventKey="3">
                         Errors
@@ -84,9 +86,12 @@ export const SideBar = (props) => {
               </Nav>
             </Navbar.Collapse>
           </Nav>
+          {/* <footer className="sidebar-footer">
+            <h4>Logged in as:</h4>
+            <h4>Start Bootstrap</h4>
+          </footer> */}
         </div>
       )}
     </div>
   );
 };
-
