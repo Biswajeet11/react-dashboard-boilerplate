@@ -5,7 +5,7 @@ export const Error401 = () => {
   return (
     <Container >
       <Row >
-        <Col >
+        <Col lg="6">
       <h1 className="display-1">401</h1>
       <p className="lead">Unauthorized</p>
       <p>Access to this resource is denied.</p>

@@ -5,10 +5,10 @@ import './style.scss';
 
 const BlankLayout = ({ children }) => {
 	return (
-			<Container fluid className="content-wrapper" >
+			<div  className="content-wrapper" >
 				{children}
 			<FooterWrapper/>
-			</Container>
+			</div>
 	)
 }
 

@@ -12,7 +12,7 @@ export const Table = () => {
   return (
     <div>
       <h1>Table</h1>
-      <CustomBreadCrum />
+      <CustomBreadCrum content="Table" />
       <CardWrapper>
         DataTables is a third party plugin that is used to generate the demo
         table below. For more information about DataTables, please visit the

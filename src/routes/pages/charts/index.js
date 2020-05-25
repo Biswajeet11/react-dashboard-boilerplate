@@ -20,7 +20,7 @@ export const Charts = () => {
   return (
     <div>
       <h1>Charts</h1>
-      <CustomBreadCrum />
+      <CustomBreadCrum content="Chart"/>
       <CardWrapper>
         Chart.js is a third party plugin that is used to generate the charts in
         this template. The charts below have been customized - for further

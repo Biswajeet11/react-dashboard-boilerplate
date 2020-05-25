@@ -6,7 +6,7 @@ export const LightSideNav = () => {
   return (
     <div>
       <h1>Sidenav Light</h1>
-      <CustomBreadCrum />
+      <CustomBreadCrum content="Sidenav Light"/>
       <CardWrapper>
         This page is an example of using the light side navigation option. By
         appending the .sb-sidenav-light class to the .sb-sidenav class, the side

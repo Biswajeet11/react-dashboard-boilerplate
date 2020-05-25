@@ -6,7 +6,7 @@ export const StaticNavigation = () => {
   return (
     <div>
       <h1>Static Navigation</h1>
-      <CustomBreadCrum />
+      <CustomBreadCrum content="Static Navigation"/>
       <CardWrapper>
         This page is an example of using static navigation. By removing the
         .sb-nav-fixed class from the body, the top navigation and side

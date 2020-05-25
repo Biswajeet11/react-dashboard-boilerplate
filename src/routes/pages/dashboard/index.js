@@ -20,7 +20,7 @@ export const Dashboard = () => {
   return (
     <div>
       <h1>Dashboard</h1>
-      <CustomBreadCrum />
+      <CustomBreadCrum content=""/>
       <Row>
         {cardData.map((data) => {
           return (

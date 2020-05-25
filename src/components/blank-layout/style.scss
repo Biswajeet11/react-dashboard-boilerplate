@@ -4,18 +4,19 @@
   transition: 0.5s;
  }
  .content-wrapper{
-   margin-top: 65px;
-   transition: 0.5s;
+   min-width: 0;
+   flex-grow: 1;
+   
  }
  
- @media (max-width: 768px) {
-  .container-wrapper {
-    padding-left: 10px !important;
-    padding-top: 65px !important;
-  }
-}
-.container{
-	bottom: 25px;
-    left: 450px;
-    right: 0;
-}
+//  @media (max-width: 768px) {
+//   .container-wrapper {
+//     padding-left: 10px !important;
+//     padding-top: 65px !important;
+//   }
+// }
+// .container{
+// 	bottom: 25px;
+//     left: 450px;
+//     right: 0;
+// }
