@@ -6,9 +6,7 @@ import './style.scss';
 const BlankLayout = ({ children }) => {
 	return (
 			<Container fluid className="content-wrapper" >
-			<div className="container">
 				{children}
-				</div>
 			<FooterWrapper/>
 			</Container>
 	)
