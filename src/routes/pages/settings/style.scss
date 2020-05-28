@@ -1,0 +1,7 @@
+.wrapper-button{
+	display: flex;
+	flex-direction: row;
+	& .button-comp{
+	margin-right: 10px;
+	}
+}

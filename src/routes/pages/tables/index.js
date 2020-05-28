@@ -14,9 +14,10 @@ export const Table = () => {
       <h1>Table</h1>
       <CustomBreadCrum content="Table" />
       <CardWrapper>
-        DataTables is a third party plugin that is used to generate the demo
-        table below. For more information about DataTables, please visit the
-        official DataTables documentation.
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
       </CardWrapper>
       <CardWrapper content="Area Chart Example" icon={areaChartIcon}>
         <CustomTable />

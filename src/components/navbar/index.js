@@ -55,7 +55,7 @@ export const CustomNavBar = ({ setIsOpen, isOpen,isLight }) => {
             title={<FontAwesomeIcon icon={faUser} />}
             id="basic-nav-dropdown"
           >
-            <NavDropdown.Item href="/">Settings</NavDropdown.Item>
+            <NavDropdown.Item href="/settings">Settings</NavDropdown.Item>
             <NavDropdown.Item href="/">Activity Log</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="/">Logout</NavDropdown.Item>

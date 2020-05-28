@@ -9,11 +9,13 @@ import paginationFactory, {
 
 import { Row, Col } from "react-bootstrap";
 
-import { columns, tableData } from "./constants";
+import { columns } from "./constants";
+import tableData from './tabledata/tabledata.json';
 import "./style.scss";
 
 const { SearchBar } = Search;
 
+console.log('the data table', tableData);
 const options = {
   custom: true,
   totalSize: tableData.length,
