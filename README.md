@@ -2,6 +2,13 @@
 
 A Dashboard made using React
 
+## Preview
+
+![]('./src/assets/images/image1.png')
+![]('./src/assets/images/image2.png')
+![]('./src/assets/images/image3.png')
+![]('./src/assets/images/image4.png')
+![]('./src/assets/images/image5.png')
 
 ## Features
 
