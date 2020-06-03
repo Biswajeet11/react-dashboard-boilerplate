@@ -13,4 +13,4 @@ A Dashboard made using React
 
 ## Clone
 
-git clone git@github.com:Biswajeet11/react-dashboard-boilerplate.git
+`git clone git@github.com:Biswajeet11/react-dashboard-boilerplate.git`
