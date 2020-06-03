@@ -2,13 +2,6 @@
 
 A Dashboard made using React
 
-## Preview
-
-![]('../../projects/dashboard-screenshot/Screenshot 2020-06-03 at 2.25.10 PM.png')
-![]('../../projects/dashboard-screenshot/Screenshot 2020-06-03 at 2.25.22 PM.png')
-![]('../../projects/dashboard-screenshot/Screenshot 2020-06-03 at 2.26.23 PM.png')
-![]('../../projects/dashboard-screenshot/Screenshot 2020-06-03 at 2.26.44 PM.png')
-![]('../../projects/dashboard-screenshot/Screenshot 2020-06-03 at 2.42.48 PM.png')
 
 ## Features
 
