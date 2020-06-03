@@ -3,12 +3,12 @@
 A Dashboard made using React
 
 ## Preview
+<img src="./src/assets/images/image1.png"/>
+<img src ="./src/assets/images/image2.png"/>
+<img src ="./src/assets/images/image3.png"/>
+<img src ="./src/assets/images/image4.png"/>
+<img src ="./src/assets/images/image5.png"/>
 
-![]('./src/assets/images/image1.png')
-![]('./src/assets/images/image2.png')
-![]('./src/assets/images/image3.png')
-![]('./src/assets/images/image4.png')
-![]('./src/assets/images/image5.png')
 
 ## Features
 
